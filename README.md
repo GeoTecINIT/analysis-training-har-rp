@@ -1,5 +1,7 @@
 # Reproducible Package for _"Analysis and Impact of Training Set Size in Cross-Subject Human Activity Recognition"_
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GeoTecINIT/analysis-training-har-rp/HEAD)
+
 This repository is the reproducibility package for the paper _“Analysis and Impact of Training Set Size in Cross-Subject Human Activity Recognition"_, submitted to the 32nd International Conference on Artificial Neural Networds (ICANN 2023).
 
 
@@ -58,7 +60,7 @@ Code files and directories:
 
   > **Warning**: with the default parameters, the script will completely execute the incremental cross-validation described in the paper. This process will last some days, depending on hardware specifications.
   
-  > **Info**: use the `--subject <number>` flag to execute the validation for only the indicated subject (1 to 23). These process will last a couple of hours, depending on hardware specifications. 
+  > **Note**: use the `--subject <number>` flag to execute the validation for only the indicated subject (1 to 23). These process will last a couple of hours, depending on hardware specifications. 
 
   ```bash
   python 02_incremental-loso.py
@@ -98,7 +100,7 @@ Directories and data files:
     
   - [`loso_groups.csv`](./02_MODEL-REPORTS/loso_groups.csv): indicates which subjects have been used to train and evaluate each model.
   
-- [`03_RESULTS`](./03_EXPERIMENT): contains the results obtained from the analyses in the [`02_performance-evaluation-analysis.ipynb`](./02_performance-evaluation-analysis.ipynb) notebook. Contains:
+- [`03_RESULTS`](./03_RESULTS): contains the results obtained from the analyses in the [`03_performance-evaluation-analysis.ipynb`](./03_performance-evaluation-analysis.ipynb) notebook. Contains:
   - `01_{sp|sw}-ev.pdf`: plots with the overall accuracy evolution for the smartphone and smartwatch models. These correspond to the Figure 2 of the paper.
   - `02_{activity}-ev.pdf`: plots with the activity-wise F1-score evolution for the smartphone and smartwatch models. These correspond to the Figure 4 of the paper.
   - `03_{sp|sw}-pairwise-table.html`: tables with the results of the statistical tests performed to find significant differences in the evolution of the overall performance.
