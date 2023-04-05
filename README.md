@@ -2,7 +2,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GeoTecINIT/analysis-training-har-rp/HEAD)
 
-This repository is the reproducibility package for the paper _“Analysis and Impact of Training Set Size in Cross-Subject Human Activity Recognition"_, submitted to the 32nd International Conference on Artificial Neural Networds (ICANN 2023).
+This repository is the reproducibility package for the paper _“Analysis and Impact of Training Set Size in Cross-Subject Human Activity Recognition"_, submitted to the 32nd International Conference on Artificial Neural Networks (ICANN 2023).
 
 
 ## Reproducibility 
