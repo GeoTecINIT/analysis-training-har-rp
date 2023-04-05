@@ -1,6 +1,7 @@
 # Reproducible Package for _"Analysis and Impact of Training Set Size in Cross-Subject Human Activity Recognition"_
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GeoTecINIT/analysis-training-har-rp/HEAD)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7801422.svg)](https://doi.org/10.5281/zenodo.7801422)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/zenodo/10.5281/zenodo.7801422/)
 
 This repository is the reproducibility package for the paper _“Analysis and Impact of Training Set Size in Cross-Subject Human Activity Recognition"_, submitted to the 32nd International Conference on Artificial Neural Networks (ICANN 2023).
 
