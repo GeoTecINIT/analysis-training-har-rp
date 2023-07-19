@@ -1,10 +1,8 @@
 # Reproducible Package for _"Analysis and Impact of Training Set Size in Cross-Subject Human Activity Recognition"_
 
 [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/GeoTecINIT/analysis-training-har-rp/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7801422.svg)](https://doi.org/10.5281/zenodo.7801422)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/zenodo/10.5281/zenodo.7801422/)
 
-This repository is the reproducibility package for the paper _“Analysis and Impact of Training Set Size in Cross-Subject Human Activity Recognition"_, submitted to the 32nd International Conference on Artificial Neural Networks (ICANN 2023).
+This repository is the reproducibility package for the _“Analysis and Impact of Training Set Size in Cross-Subject Human Activity Recognition"_ conference paper.
 
 You can explore the data and code used to obtain the results presented in the paper. To properly view the Jupyter Notebook files with their rendered figures, click on the "nbviewer" badge above.
 
@@ -104,11 +102,12 @@ Directories and data files:
   - [`loso_groups.csv`](./02_MODEL-REPORTS/loso_groups.csv): indicates which subjects have been used to train and evaluate each model.
   
 - [`03_RESULTS`](./03_RESULTS): contains the results obtained from the analyses in the [`03_performance-evaluation-analysis.ipynb`](./03_performance-evaluation-analysis.ipynb) notebook. Contains:
-  - `01_{sp|sw}-ev.pdf`: plots with the overall accuracy evolution for the smartphone and smartwatch models. These correspond to the Figure 2 of the paper.
-  - `02_{activity}-ev.pdf`: plots with the activity-wise F1-score evolution for the smartphone and smartwatch models. These correspond to the Figure 4 of the paper.
-  - `03_{sp|sw}-pairwise-table.html`: tables with the results of the statistical tests performed to find significant differences in the evolution of the overall performance.
-  - `03_{sp|sw}-pairwise-tests.pdf`: graphical representations of the previous tables. These correspond to Figure 3 of the paper.
-  - `04_{overall|activities}-comparison-table.html`: tables with the results of the statistical tests performed to find significant differences in the evolution of the activity-wise performance. These tables correspond the the Table 2 of the paper.
+  - `01_{sp|sw}-ev.pdf`: plots with the overall accuracy evolution for the smartphone and smartwatch models. These correspond to the **Figure 2** of the paper.
+  - `02_{activity}-ev.pdf`: plots with the activity-wise F1-score evolution for the smartphone and smartwatch models. These correspond to the **Figure 4** of the paper.
+  - `03_sp-fails-by-subject.pdf`: plot with the number of times each evaluation subject obtained a F1-score == 0 in the _seated_, _standing up_ and _sitting down_ activities in the _sp_ models. The plot corresponds with the **Figure 5** of the paper.
+  - `04_{sp|sw}-pairwise-table.html`: tables with the results of the statistical tests performed to find significant differences in the evolution of the overall performance.
+  - `04_{sp|sw}-pairwise-tests.pdf`: graphical representations of the previous tables. These correspond to **Figure 3** of the paper.
+  - `05_{overall|activities}-comparison-table.html`: tables with the results of the statistical tests performed to find significant differences in the evolution of the activity-wise performance. These tables correspond the the **Table 3** of the paper.
 
 
 ## License
