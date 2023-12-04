@@ -2,9 +2,12 @@
 
 [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/GeoTecINIT/analysis-training-har-rp/)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/zenodo/10.5281/zenodo.8163542/)
+[![Paper DOI](https://img.shields.io/badge/Paper%20DOI-10.1007%2F978--3--031--49018--7__28-yellow.svg)](https://doi.org/10.1007/978-3-031-49018-7_28)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8163542.svg)](https://doi.org/10.5281/zenodo.8163542)
 
 This repository is the reproducibility package for the _“Analysis and Impact of Training Set Size in Cross-Subject Human Activity Recognition"_ conference paper.
+
+> Matey-Sanz, M., Torres-Sospedra, J., González-Pérez, A., Casteleyn, S., & Granell, C. (2023, November). Analysis and Impact of Training Set Size in Cross-Subject Human Activity Recognition. In Iberoamerican Congress on Pattern Recognition (pp. 391-405). Cham: Springer Nature Switzerland.
 
 You can explore the data and code used to obtain the results presented in the paper. To properly view the Jupyter Notebook files with their rendered figures, click on the "nbviewer" badge above.
 
