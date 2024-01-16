@@ -46,7 +46,8 @@ docker run -it -p 8888:8888 analysis-training-har-rp
 ### Reproduce the analysis
 Execute a script or open the desired Jupyter Notebook (\*.ipynb) file. The notebook contains the code used for the analysis and its outputs. You can execute the code to reproduce the obtained results presented in the paper.
 
-> **Note**: when executing code with a component of randomness (i.e., ML models training), the obtained results could be slightly different than the reported ones. Notwithstanding, the conclusions should be similar as the reported ones.
+> [!NOTE]
+> When executing code with a component of randomness (i.e., ML models training), the obtained results could be slightly different than the reported ones. Notwithstanding, the conclusions should be similar as the reported ones.
 
 
 ## Repository structure
@@ -64,15 +65,18 @@ Code files and directories:
   ```
 - [`02_incremental-loso.py`](./02_incremental-loso.py): Python script implementing the incremental cross-validation described in the paper. The performance metric obtained from the training process are stored in [`02_MODEL-REPORTS`](./02_MODEL-REPORTS). You can run the script with its default parameters by executing the following command in the terminal:
 
-  > **Warning**: with the default parameters, the script will completely execute the incremental cross-validation described in the paper. This process will last some days, depending on hardware specifications.
+> [!WARNING]
+> With the default parameters, the script will completely execute the incremental cross-validation described in the paper. This process will last some days, depending on hardware specifications.
   
-  > **Note**: use the `--subject <number>` flag to execute the validation for only the indicated subject (1 to 23). These process will last a couple of hours, depending on hardware specifications. 
+> [!TIP]
+> Use the `--subject <number>` flag to execute the validation for only the indicated subject (1 to 23). This process will last a couple of hours, depending on hardware specifications. 
 
   ```bash
   python 02_incremental-loso.py
   ```
    
-  > **Warning**: running the script will overwrite the results stored in `02_MODEL-REPORTS`. You can use the `--testing_script` flag to avoid overwriting the results.
+> [!CAUTION]
+> Running the script will overwrite the results stored in `02_MODEL-REPORTS`. You can use the `--testing_script` flag to avoid overwriting the results.
    
   You can run the following command to obtain a description of the accepted parameters:
    
@@ -96,13 +100,14 @@ Directories and data files:
   - [`sp_models.csv`](./02_MODEL-REPORTS/sp_models.csv): performance metrics from models trained with smartphone data.
   - [`sw_models.csv`](./02_MODEL-REPORTS/sw_models.csv): performance metrics from models trained with smartwatch data.
   
-    > **Note**: csv columns are the following ones:
-    > - **test_subject**: subject use to evaluate the model
-    > - **n**: number of subjects used for training.
-    > - **i**: i<sup>th</sup> model trained for a certain **n**.
-    > - **target**: to which element the **metric** belongs (e.g., model, certain activity, etc.).
-    > - **metric**: to which metric belongs the **value** (e.g., accuracy, f1-score, etc.).
-    > - **value**: value of the metric.
+> [!NOTE]
+> CSV columns are the following ones:
+> - **test_subject**: subject use to evaluate the model
+> - **n**: number of subjects used for training.
+> - **i**: i<sup>th</sup> model trained for a certain **n**.
+> - **target**: to which element the **metric** belongs (e.g., model, certain activity, etc.).
+> - **metric**: to which metric belongs the **value** (e.g., accuracy, f1-score, etc.).
+> - **value**: value of the metric.
     
   - [`loso_groups.csv`](./02_MODEL-REPORTS/loso_groups.csv): indicates which subjects have been used to train and evaluate each model.
   
@@ -121,3 +126,8 @@ The documents in this repository are licensed under [Creative Commons Attributio
 All contained code is licensed under the [Apache License 2.0](./LICENSE).
 
 All data used in this repository is licensed under [Open Data Commons Attribution License](https://opendatacommons.org/licenses/by/).
+
+## Acknowledgements
+
+This work has been funded by the Spanish Ministry of Universities [grants FPU19/05352 and FPU17/03832] and by MCIN/AEI/10.13039/501100011033 [grant PID2020-120250RB-I00].
+
